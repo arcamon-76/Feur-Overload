@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Mariage.unity
+    guid: 774f6d91a88a9a94abc11524baf72dce
+  - enabled: 1
+    path: Assets/Scenes/New Scene.unity
+    guid: 4fb139078a9e34348aaa07ed2b67f2cb
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 645f5a17ef3604b459e0ebf68ea0b64e
+  - enabled: 1
+    path: Assets/Scenes/Interview_TV.unity
+    guid: d86a2820e683471468cc1bf693d5ff98
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
