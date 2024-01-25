@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button feur
       objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -262,7 +266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &96316213
 RectTransform:
   m_ObjectHideFlags: 0
@@ -896,6 +900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button feur (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1123,6 +1131,10 @@ PrefabInstance:
     - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_Name
       value: Button feur (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1570,6 +1582,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1683,6 +1699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1795,6 +1815,10 @@ PrefabInstance:
     - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_Name
       value: Button (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5425219508816665117, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5565997344276436739, guid: 71f50b074c2508447920267faf61e2f5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
