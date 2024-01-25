@@ -3,7 +3,8 @@
 public class SoundManager : MonoBehaviour
 {
     public AudioClip timeStop;
-    [SerializeField] AudioClip timeResume;
+    public AudioClip timeResume;
+    public AudioClip buttonClick;
 
     [SerializeField] AudioSource audioSource;
 
