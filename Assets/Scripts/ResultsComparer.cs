@@ -35,6 +35,10 @@ public class ResultsComparer : MonoBehaviour
             scoreBar.AddPoints(PointsByRightAnswer);
             print("true");
         }
+        else if (answerSubmited == "coubeh")
+        {
+            Application.Quit();
+        }
 
         else if ((answerNeeded.ToLower() != inputField.text.ToLower()))
         {
