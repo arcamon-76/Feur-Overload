@@ -4565,7 +4565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textblock: {fileID: 1637852629}
   TextFieldSpeed: 0.99
-  textDirection: 0
+  textDirection: 3
   maxValueForEndTrigger: 1032
 --- !u!114 &1637852631
 MonoBehaviour:
