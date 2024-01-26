@@ -19,11 +19,16 @@ public class GameManager : MonoBehaviour
             soundManager = GetComponent<SoundManager>();
         }
     }
+
     public void SlowTime()
     {
         textConveyorBelt.UpdateSpeedTo(0);
         soundManager.DoTheSound(soundManager.timeStop);
+    }
 
+    public void ResumeTime()
+    {
+        textConveyorBelt.UpdateSpeedTo(1);
     }
 
     internal static void EndGame()

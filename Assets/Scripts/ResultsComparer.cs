@@ -3,13 +3,18 @@ using UnityEngine;
 
 public class ResultsComparer : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] GameManager gameManager;
     [SerializeField] ScoreBar scoreBar;
+    [SerializeField] InputFieldMover inputFieldMover;
     [SerializeField] TMP_InputField inputField;
+    [SerializeField] KaraokeCursor karaokeCursor;
+    [Header("Debug")]
     [SerializeField] string answerNeeded;
     [SerializeField] string answerSubmited;
     [SerializeField] float PointsByRightAnswer;
-    [SerializeField] InputFieldMover inputFieldMover;
-
+    [Header("Gameplay")]
+    [SerializeField] bool cursorBasedGameplay;
 
     public void UpdateAnswerNeeded(string temp_word)
     {
@@ -18,9 +23,31 @@ public class ResultsComparer : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (cursorBasedGameplay!)
         {
-            SubmitAnswer();
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SubmitAnswer();
+            }
+        }
+
+        if (cursorBasedGameplay)
+        {
+
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (karaokeCursor.isOnWord)
+                    gameManager.SlowTime();
+                else
+                    scoreBar.RemovePoints();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                if (karaokeCursor.isOnWord)
+                    SubmitAnswer();
+            }
         }
     }
 
@@ -28,7 +55,6 @@ public class ResultsComparer : MonoBehaviour
     {
         print("starting submition");
         if (inputField.text.ToLower() == "") return;
-        //if (inputFieldMover.isShowed == false) return;
 
         if (answerNeeded.ToLower() == inputField.text.ToLower())
         {
@@ -45,5 +71,6 @@ public class ResultsComparer : MonoBehaviour
             print("false");
             scoreBar.RemovePoints();
         }
+        gameManager.ResumeTime();
     }
 }
