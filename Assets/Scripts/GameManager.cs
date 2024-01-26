@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextConveyorBelt textConveyorBelt;
     [SerializeField] EffectManager effectManager;
     [SerializeField] SoundManager soundManager;
-
+    [SerializeField] GameObject endGameObject;
 
     void Start()
     {
@@ -28,12 +28,12 @@ public class GameManager : MonoBehaviour
 
     public void ResumeTime()
     {
-        textConveyorBelt.UpdateSpeedTo(1);
+        textConveyorBelt.UpdateSpeedTo(0.5f);
     }
 
-    internal static void EndGame()
+    public void EndGame()
     {
         print("EndGame");
-        throw new NotImplementedException();
+        endGameObject.SetActive(true);
     }
 }

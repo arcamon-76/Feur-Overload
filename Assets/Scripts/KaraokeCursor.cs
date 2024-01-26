@@ -9,6 +9,7 @@ public class KaraokeCursor : MonoBehaviour
         resultsComparer.UpdateAnswerNeeded(collision.tag);
         isOnWord = true;
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         isOnWord = false;

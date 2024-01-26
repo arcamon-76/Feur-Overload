@@ -12,6 +12,7 @@ public class TextConveyorBelt : MonoBehaviour
         ToTheBottom,
     }
 
+    [SerializeField] GameManager gameManager;
     [SerializeField] RectTransform textblock;
     [SerializeField, Range(0, 2)] float TextFieldSpeed;
     [Header("End Trigger")]
@@ -38,31 +39,31 @@ public class TextConveyorBelt : MonoBehaviour
             case TextDirection.ToTheLeft:
                 textblock.transform.Translate(new Vector3(-TextFieldSpeed, 0));
                 if (textblock.localPosition.x < maxValueForEndTrigger)
-                    GameManager.EndGame();
+                    gameManager.EndGame();
                 break;
 
             case TextDirection.ToTheRight:
                 textblock.transform.Translate(new Vector3(TextFieldSpeed, 0));
                 if (textblock.localPosition.x > maxValueForEndTrigger)
-                    GameManager.EndGame();
+                    gameManager.EndGame();
                 break;
 
             case TextDirection.ToTheTop:
                 textblock.transform.Translate(new Vector3(0, TextFieldSpeed));
                 if (textblock.localPosition.y > maxValueForEndTrigger)
-                    GameManager.EndGame();
+                    gameManager.EndGame();
                 break;
 
             case TextDirection.ToTheBottom:
                 textblock.transform.Translate(new Vector3(0, -TextFieldSpeed));
                 if (textblock.localPosition.y < maxValueForEndTrigger)
-                    GameManager.EndGame();
+                    gameManager.EndGame();
 
                 break;
             case TextDirection.TimerBased:
-                maxValueForEndTrigger = maxValueForEndTrigger - (1 * Time.deltaTime);
+                maxValueForEndTrigger = maxValueForEndTrigger - (1 / Time.deltaTime);
                 if (maxValueForEndTrigger < 0)
-                    GameManager.EndGame();
+                    gameManager.EndGame();
                 break;
             default:
                 break;

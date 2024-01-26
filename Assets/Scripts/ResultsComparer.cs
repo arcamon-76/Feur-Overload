@@ -23,7 +23,7 @@ public class ResultsComparer : MonoBehaviour
 
     void Update()
     {
-        if (cursorBasedGameplay!)
+        if (!cursorBasedGameplay)
         {
             if (Input.GetKeyDown(KeyCode.Return))
             {
@@ -42,7 +42,7 @@ public class ResultsComparer : MonoBehaviour
                 else
                     scoreBar.RemovePoints();
             }
-            
+
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (karaokeCursor.isOnWord)
@@ -61,6 +61,7 @@ public class ResultsComparer : MonoBehaviour
             scoreBar.AddPoints(PointsByRightAnswer);
             print("true");
         }
+
         else if (answerSubmited == "coubeh")
         {
             Application.Quit();
